@@ -21,7 +21,7 @@ const Navbar = () => {
   const [toggleMobileMenu, setToggleMobileMenu] = useState(false);
 
   return (
-    <nav className="bg-white dark:bg-black w-screen h-[60px] border-b-[1px] border-black dark:border-white transition-all duration-[300ms]">
+    <nav className="bg-white dark:bg-black w-screen h-[60px] border-b-[1px] border-black dark:border-white transition-all duration-[300ms] sticky top-0">
       <Container>
         <Link href={"/"} className="flex items-center justify-start gap-[10px]">
           <Image src={currentmode === 'light' ? "/images/logo2.png" : "/images/logo.png"} width={30} height={30} alt="logo" className="rounded-[50%]"></Image>

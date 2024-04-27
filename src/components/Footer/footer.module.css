@@ -1,0 +1,39 @@
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 200;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+}
+
+.footerIcon {
+    padding: 0;
+    margin: 0;
+    width: 16px;
+    height: 16px;
+    animation: heartIcon .5s infinite ease-in-out;
+}
+
+.footer h3 {
+    width: fit-content;
+    font-size: 12px;
+}
+
+@keyframes heartIcon {
+    0% {
+        width: 16px;
+        height: 16px;
+    }
+    50% {
+        width: 18px;
+        height: 18px;
+    }
+    100% {
+        width: 16px;
+        height: 16px;
+    }
+}
