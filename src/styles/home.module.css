@@ -1,0 +1,31 @@
+.homePage_hero_section {
+    min-height: calc(100vh - (60px + 30px + 2px));
+    width: 80%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 16px;
+    margin: 0px auto;
+}
+
+.homePage_hero_section h2 {
+    text-transform: capitalize;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.homePage_hero_section span {
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.homePage_hero_section p {
+    text-transform: capitalize;
+}
+
+@media screen and (max-width: 620px) {
+    .homePage_hero_section {
+        width: 90%;
+    }
+}

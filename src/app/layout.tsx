@@ -16,7 +16,7 @@ const AppLayout = ({ children }: { children: React.ReactNode }) => {
       </head>
       <body>
         <Providers>
-          <main>
+          <main className="bg-white dark:bg-[#192734]">
             {children}
           </main>
         </Providers>
