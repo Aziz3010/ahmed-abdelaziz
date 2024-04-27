@@ -21,9 +21,9 @@ const Navbar = () => {
   const [toggleMobileMenu, setToggleMobileMenu] = useState(false);
 
   return (
-    <nav className="bg-white dark:bg-black w-screen h-[60px] border-b-[1px] border-black dark:border-white transition-all duration-[300ms] sticky top-0">
+    <nav className="bg-white dark:bg-black w-screen h-[60px] border-b-[1px] border-black dark:border-white transition-all duration-[300ms] sticky top-0 z-50">
       <Container>
-        <Link href={"/"} className="flex items-center justify-start gap-[10px]">
+        <Link href={"/"} scroll={false} className="flex items-center justify-start gap-[10px]">
           <Image src={currentmode === 'light' ? "/images/logo2.png" : "/images/logo.png"} width={30} height={30} alt="logo" className="rounded-[50%]"></Image>
           <h1 className="text-black select-none dark:text-white font-bold">Portfolio</h1>
         </Link>
@@ -37,13 +37,13 @@ const Navbar = () => {
                 </button>
               </li>
               <li>
-                <Link className="capitalize select-none p-[8px] rounded-[4px] hover:bg-gray-700 text-black hover:text-white dark:text-white dark:hover:bg-white dark:hover:text-black transition-all duration-[300ms]" href="/">home</Link>
+                <Link scroll={false} className="capitalize select-none p-[8px] rounded-[4px] hover:bg-gray-700 text-black hover:text-white dark:text-white dark:hover:bg-white dark:hover:text-black transition-all duration-[300ms]" href="/">home</Link>
               </li>
               <li>
-                <Link className="capitalize select-none p-[8px] rounded-[4px] hover:bg-gray-700 text-black hover:text-white dark:text-white dark:hover:bg-white dark:hover:text-black transition-all duration-[300ms]" href="/projects">projects</Link>
+                <Link scroll={false} className="capitalize select-none p-[8px] rounded-[4px] hover:bg-gray-700 text-black hover:text-white dark:text-white dark:hover:bg-white dark:hover:text-black transition-all duration-[300ms]" href="/projects">projects</Link>
               </li>
               <li>
-                <Link className="capitalize select-none p-[8px] rounded-[4px] hover:bg-gray-700 text-black hover:text-white dark:text-white dark:hover:bg-white dark:hover:text-black transition-all duration-[300ms]" href="/contributions">contributions</Link>
+                <Link scroll={false} className="capitalize select-none p-[8px] rounded-[4px] hover:bg-gray-700 text-black hover:text-white dark:text-white dark:hover:bg-white dark:hover:text-black transition-all duration-[300ms]" href="/contributions">contributions</Link>
               </li>
             </ul>
           </div>
@@ -57,7 +57,7 @@ const Navbar = () => {
               )}
             </button>
 
-            <Link href={"/login"}>
+            <Link href={"/login"} scroll={false}>
               <KeyIcon className="size-6 dark:text-white" />
             </Link>
 

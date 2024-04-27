@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+/* :root {
   --container_padding: 1rem;
   --transition_duration: .3s;
   --transition_type: ease-in-out;
@@ -12,7 +12,7 @@
 
   --primary_text-color: #000;
   --secondary_text-color: #fff;
-}
+} */
 
 * {
   padding: 0;
