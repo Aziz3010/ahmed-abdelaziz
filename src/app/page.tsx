@@ -9,7 +9,7 @@ export default function Home() {
       <section className={`${homePage_hero_section} pt-[40px] pb-[40px]`}>
         <div className="mb-6">
           <h2 className="text-[#3b4a54] dark:text-white">
-            I am ahmed abdelaziz
+            I&apos;m ahmed abdelaziz
           </h2>
           <span className="text-[#3b4a54] dark:text-white">
             front-end developer
@@ -22,7 +22,7 @@ export default function Home() {
               Introduction:
             </h3>
             <p className="text-[#3b4a54] dark:text-white text-[16px] pl-[30px]">
-              I'm a passionate mid-senior front-end developer specializing in
+              I&apos;m a passionate mid-senior front-end developer specializing in
               React.js and Next.js, with a keen eye for crafting engaging user
               experiences. With several years of hands-on experience in web
               development, I thrive in dynamic environments where creativity and

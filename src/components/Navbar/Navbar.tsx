@@ -28,7 +28,7 @@ const Navbar = () => {
     <nav className="bg-white dark:bg-[#192734] w-screen h-[60px] border-b-[.5px] border-[#192734] dark:border-white transition-all duration-[300ms] sticky top-0 z-50">
       <Container>
         <Link href={"/"} scroll={false} className="flex items-center justify-start gap-[10px]">
-          <Image src={currentmode === 'light' ? "/images/logo2.png" : "/images/logo.png"} width={30} height={30} alt="logo" className="rounded-[50%]"></Image>
+          <Image src={currentmode === "light" ? "/images/logo2.png" : "/images/logo.png"} width={30} height={30} alt="logo" className="rounded-[50%]"></Image>
           <h1 className="text-[#192734] select-none dark:text-white font-bold">Portfolio</h1>
         </Link>
 
