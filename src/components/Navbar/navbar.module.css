@@ -1,0 +1,43 @@
+.burgerButton,
+.closeIconLi {
+    display: none;
+}
+
+@media screen and (max-width: 620px) {
+    .navListContainer {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        width: 100vw;
+        background: #0606062a;
+        transition: right .3s;
+        z-index: 1000;
+    }
+
+    .navList {
+        flex-direction: column;
+        padding: 10px;
+        width: 250px;
+        height: 100vh;
+        margin-left: auto;
+        background: #fff;
+        gap: 16px;
+    }
+    .navList li {
+        width: 100%;
+    }
+    .navList li a {
+        display: block;
+        width: 100%;
+    }
+    .navList li.closeIconLi {
+        display: block;
+        width: fit-content;
+        margin-left: auto;
+    }
+
+    .burgerButton {
+        display: flex;
+    }
+}

@@ -1,17 +1,15 @@
 "use client"
 import Footer from "@/components/Footer/Footer";
 import Navbar from "@/components/Navbar/Navbar";
-import styles from "../styles/mainLayout.module.css";
-
-const {mainElement} = styles;
+import { Fragment } from "react";
 
 const MainLayout = ({children}: {children: React.ReactNode}) => {
   return (
-    <main className={mainElement}>
+    <Fragment>
       <Navbar />
       {children}
       <Footer />
-    </main>
+    </Fragment>
   )
 }
 
