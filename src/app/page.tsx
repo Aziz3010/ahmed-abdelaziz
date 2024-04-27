@@ -9,7 +9,7 @@ export default function Home() {
       <section className={`${homePage_hero_section} pt-[40px] pb-[40px]`}>
         <div className="mb-6">
           <h2 className="text-[#3b4a54] dark:text-white">
-            i'm ahmed abdelaziz
+            I am ahmed abdelaziz
           </h2>
           <span className="text-[#3b4a54] dark:text-white">
             front-end developer
