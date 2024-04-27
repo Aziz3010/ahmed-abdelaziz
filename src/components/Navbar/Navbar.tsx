@@ -30,7 +30,7 @@ const Navbar = () => {
 
         <div className="flex items-center justify-start gap-[32px]">
           <div onClick={(e: any) => {e.target.id === "navListContainer" ? setToggleMobileMenu(false) : null }} id="navListContainer" className={navListContainer} style={{right: `${toggleMobileMenu ? "0px" : "-100vw"}`}}>
-            <ul className={`flex items-center justify-start gap-[24px] ${navList}`}>
+            <ul className={`flex items-center justify-start gap-[24px] bg-white dark:bg-black ${navList}`}>
               <li className={closeIconLi}>
                 <button onClick={() => {setToggleMobileMenu(false)}} className={burgerButton}>
                   <XMarkIcon className="size-6  dark:text-white" />
