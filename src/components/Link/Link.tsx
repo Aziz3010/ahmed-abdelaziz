@@ -24,7 +24,7 @@ const LinkComponent = ({
         dark:text-white dark:hover:bg-white dark:hover:text-[#192734]
         transition-all
         duration-[300ms]
-        ${ pathName === linkPath ? "bg-[#192734] text-white dark:bg-white dark:!text-[#192734]" : "" }
+        ${ pathName === linkPath || pathName.split("/").includes(linkName) ? "bg-[#192734] text-white dark:bg-white dark:!text-[#192734]" : "" }
       `}
       href={linkPath}
     >
